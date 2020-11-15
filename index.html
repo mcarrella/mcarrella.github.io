@@ -36,10 +36,30 @@
   <script>
     if ('serviceWorker' in navigator) {
       window.addEventListener('flutter-first-frame', function () {
-        navigator.serviceWorker.register('flutter_service_worker.js?v=3084316948');
+        navigator.serviceWorker.register('flutter_service_worker.js?v=1755892039');
       });
     }
   </script>
   <script src="main.dart.js" type="application/javascript"></script>
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyC-vhIxVP-4dJAg6HO61l6uG3ePJsXdGdQ",
+    authDomain: "hubbub-4982f.firebaseapp.com",
+    databaseURL: "https://hubbub-4982f.firebaseio.com",
+    projectId: "hubbub-4982f",
+    storageBucket: "hubbub-4982f.appspot.com",
+    messagingSenderId: "394457876816",
+    appId: "1:394457876816:web:038f95037f167d528c0455"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
 </body>
 </html>
